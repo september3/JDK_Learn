@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5bb23e28-10de-4132-b172-103307bcab26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/awt/FontFormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/awt/FontFormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/awt/IllegalComponentStateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/awt/IllegalComponentStateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/lang/AssertionError.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/AssertionError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/lang/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/Object.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/lang/String.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/String.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/util/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/Arrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSource/util/Objects.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/Objects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/io/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/io/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/io/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/io/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/lang/Long.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/Long.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/lang/SecurityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/SecurityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/lang/StringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/StringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/lang/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/lang/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/sql/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/sql/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/sql/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/sql/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/util/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/util/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/util/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSource/util/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSource/util/Properties.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,61 +26,74 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaSource/lang/Object.java">
+        <entry file="file://$PROJECT_DIR$/JavaSource/lang/Long.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="977" column="42" selection-start-line="977" selection-start-column="42" selection-end-line="977" selection-end-column="42" />
               <folding>
-                <element signature="e#3332#3333#0" expanded="true" />
-                <element signature="e#3368#3369#0" expanded="true" />
-                <element signature="e#2429#2430#0" expanded="true" />
-                <element signature="e#2512#2513#0" expanded="true" />
+                <element signature="e#6367#6368#0" expanded="true" />
+                <element signature="e#6413#6414#0" expanded="true" />
+                <element signature="e#30211#30212#0" expanded="true" />
+                <element signature="e#30245#30246#0" expanded="true" />
+                <element signature="e#42627#42628#0" expanded="true" />
+                <element signature="e#42688#42689#0" expanded="true" />
+                <element signature="e#43271#43272#0" expanded="true" />
+                <element signature="e#43327#43328#0" expanded="true" />
+                <element signature="e#38113#38114#0" expanded="true" />
+                <element signature="e#38173#38174#0" expanded="true" />
+                <element signature="e#56586#56587#0" expanded="true" />
+                <element signature="e#56614#56615#0" expanded="true" />
+                <element signature="e#56987#56988#0" expanded="true" />
+                <element signature="e#57024#57025#0" expanded="true" />
+                <element signature="e#58479#58480#0" expanded="true" />
+                <element signature="e#58516#58517#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaSource/util/Objects.java">
+        <entry file="file://$PROJECT_DIR$/JavaSource/lang/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="427" column="61" selection-start-line="427" selection-start-column="61" selection-end-line="427" selection-end-column="61" />
               <folding>
-                <element signature="e#1618#1619#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#2319#2320#0" expanded="true" />
-                <element signature="e#2365#2366#0" expanded="true" />
-                <element signature="e#5397#5398#0" expanded="true" />
-                <element signature="e#5437#5438#0" expanded="true" />
-                <element signature="e#6011#6012#0" expanded="true" />
-                <element signature="e#6074#6075#0" expanded="true" />
-                <element signature="e#1848#1849#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
-                <element signature="e#3238#3239#0" expanded="true" />
-                <element signature="e#3272#3273#0" expanded="true" />
-                <element signature="e#3422#3423#0" expanded="true" />
-                <element signature="e#3456#3457#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#12563#12564#0" expanded="true" />
+                <element signature="e#12594#12595#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaSource/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/JavaSource/io/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-440">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JavaSource/util/Arrays.java">
+        <entry file="file://$PROJECT_DIR$/JavaSource/io/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="3956" column="9" selection-start-line="3956" selection-start-column="9" selection-end-line="3956" selection-end-column="9" />
+            <state relative-caret-position="308">
+              <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
+              <folding>
+                <element signature="e#4269#4270#0" expanded="true" />
+                <element signature="e#4294#4295#0" expanded="true" />
+                <element signature="e#5796#5797#0" expanded="true" />
+                <element signature="e#5825#5826#0" expanded="true" />
+                <element signature="e#11520#11521#0" expanded="true" />
+                <element signature="e#11555#11556#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +105,7 @@
       <find>compare</find>
       <find>deepEquals0</find>
       <find>Hashcode</find>
+      <find>props</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,6 +156,18 @@
         <option value="$PROJECT_DIR$/JavaSource/util/Arrays.java" />
         <option value="$PROJECT_DIR$/JavaSource/lang/String.java" />
         <option value="$PROJECT_DIR$/JavaSource/util/Objects.java" />
+        <option value="$PROJECT_DIR$/JavaSource/util/Calendar.java" />
+        <option value="$PROJECT_DIR$/JavaSource/util/Collection.java" />
+        <option value="$PROJECT_DIR$/JavaSource/util/ArrayList.java" />
+        <option value="$PROJECT_DIR$/JavaSource/sql/Connection.java" />
+        <option value="$PROJECT_DIR$/JavaSource/sql/Statement.java" />
+        <option value="$PROJECT_DIR$/JavaSource/lang/StringBuilder.java" />
+        <option value="$PROJECT_DIR$/JavaSource/lang/SecurityException.java" />
+        <option value="$PROJECT_DIR$/JavaSource/io/Console.java" />
+        <option value="$PROJECT_DIR$/JavaSource/io/Reader.java" />
+        <option value="$PROJECT_DIR$/JavaSource/util/Properties.java" />
+        <option value="$PROJECT_DIR$/JavaSource/lang/Long.java" />
+        <option value="$PROJECT_DIR$/JavaSource/lang/System.java" />
       </list>
     </option>
   </component>
@@ -153,6 +184,7 @@
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -166,17 +198,6 @@
               <item name="jdk8" type="b2602c69:ProjectViewProjectNode" />
               <item name="jdk8" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jdk8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdk8" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jdk8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdk8" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaSource" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -189,6 +210,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../607-" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -218,19 +244,32 @@
       <workItem from="1555515221823" duration="2204000" />
       <workItem from="1555745230678" duration="6663000" />
       <workItem from="1555835768076" duration="18141000" />
-      <workItem from="1555905625465" duration="5403000" />
+      <workItem from="1555905625465" duration="5700000" />
+      <workItem from="1556457075982" duration="85000" />
+      <workItem from="1556462534174" duration="800000" />
+      <workItem from="1556509686498" duration="126000" />
+      <workItem from="1556512742406" duration="136000" />
+      <workItem from="1556515106846" duration="976000" />
+      <workItem from="1557298265963" duration="664000" />
+      <workItem from="1557299293943" duration="78000" />
+      <workItem from="1557306821701" duration="906000" />
+      <workItem from="1557307906755" duration="60000" />
+      <workItem from="1557471892288" duration="4005000" />
+      <workItem from="1557640691348" duration="831000" />
+      <workItem from="1557642477260" duration="2317000" />
+      <workItem from="1557652216561" duration="10680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35619000" />
+    <option name="totallyTimeSpent" value="57580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49146757" weight="0.31240544" />
+      <window_info id="Structure" order="1" sideWeight="0.5085324" side_tool="true" weight="0.31240544" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -246,10 +285,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32935154" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32879046" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32764506" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -262,171 +301,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/output/production/JavaSourceReader/java/lang/Appendable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/awt/color/CMMException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2529">
-          <caret line="1918" column="51" selection-start-line="1918" selection-start-column="51" selection-end-line="1918" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7080#7081#0" expanded="true" />
-            <element signature="e#7138#7139#0" expanded="true" />
-            <element signature="e#7244#7245#0" expanded="true" />
-            <element signature="e#7298#7299#0" expanded="true" />
-            <element signature="e#8898#8899#0" expanded="true" />
-            <element signature="e#8925#8926#0" expanded="true" />
-            <element signature="e#16439#16440#0" expanded="true" />
-            <element signature="e#16471#16472#0" expanded="true" />
-            <element signature="e#18733#18734#0" expanded="true" />
-            <element signature="e#18787#18788#0" expanded="true" />
-            <element signature="e#19434#19435#0" expanded="true" />
-            <element signature="e#19499#19500#0" expanded="true" />
-            <element signature="e#37129#37130#0" expanded="true" />
-            <element signature="e#37193#37194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/production/JavaSourceReader/java/lang/IllegalArgumentException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/java.lang.Exception">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>java.lang.Exception</OriginalElement>
-          <nodes>
-            <node x="" y="">java.lang.Exception</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="16.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1858">
-          <caret line="196" column="27" lean-forward="true" selection-start-line="196" selection-start-column="27" selection-end-line="196" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2197#2198#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#2902#2903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/IllegalFormatCodePointException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/IllegalFormatConversionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/IllegalFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/IllegalFormatFlagsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaSource/util/IllegalFormatPrecisionException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -740,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="3956" column="9" selection-start-line="3956" selection-start-column="9" selection-end-line="3956" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/production/JavaSourceReader/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -754,12 +626,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaSource/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaSource/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="-2200">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#3332#3333#0" expanded="true" />
@@ -772,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaSource/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="142" column="28" selection-start-line="142" selection-start-column="28" selection-end-line="142" selection-end-column="28" />
+        <state relative-caret-position="2970">
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
           <folding>
             <element signature="e#1618#1619#0" expanded="true" />
             <element signature="e#1701#1702#0" expanded="true" />
@@ -797,5 +666,299 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="3956" column="9" selection-start-line="3956" selection-start-column="9" selection-end-line="3956" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/sun/rmi/runtime/Log.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Calendar">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Calendar</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.Calendar</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="281.0" y="43.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="273" column="3" selection-start-line="273" selection-start-column="3" selection-end-line="273" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/ArithmeticException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <folding>
+            <element signature="e#0#2179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.class" />
+    <entry file="file://$PROJECT_DIR$/output/production/JavaSourceReader/java/lang/AbstractStringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="805" column="18" selection-start-line="805" selection-start-column="18" selection-end-line="805" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="164" column="18" selection-start-line="164" selection-start-column="18" selection-end-line="164" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/production/JavaSourceReader/java/lang/SecurityException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/SecurityException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2488#2489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/io/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="247" lean-forward="true" selection-start-line="247" selection-end-line="247" />
+          <folding>
+            <element signature="e#4269#4270#0" expanded="true" />
+            <element signature="e#4294#4295#0" expanded="true" />
+            <element signature="e#5796#5797#0" expanded="true" />
+            <element signature="e#5825#5826#0" expanded="true" />
+            <element signature="e#11520#11521#0" expanded="true" />
+            <element signature="e#11555#11556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Properties">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Properties</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.Properties</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="73.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-440">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11990">
+          <caret line="839" selection-start-line="839" selection-end-line="839" />
+          <folding>
+            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#5810#5811#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#4692#4693#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="977" column="42" selection-start-line="977" selection-start-column="42" selection-end-line="977" selection-end-column="42" />
+          <folding>
+            <element signature="e#6367#6368#0" expanded="true" />
+            <element signature="e#6413#6414#0" expanded="true" />
+            <element signature="e#30211#30212#0" expanded="true" />
+            <element signature="e#30245#30246#0" expanded="true" />
+            <element signature="e#42627#42628#0" expanded="true" />
+            <element signature="e#42688#42689#0" expanded="true" />
+            <element signature="e#43271#43272#0" expanded="true" />
+            <element signature="e#43327#43328#0" expanded="true" />
+            <element signature="e#38113#38114#0" expanded="true" />
+            <element signature="e#38173#38174#0" expanded="true" />
+            <element signature="e#56586#56587#0" expanded="true" />
+            <element signature="e#56614#56615#0" expanded="true" />
+            <element signature="e#56987#56988#0" expanded="true" />
+            <element signature="e#57024#57025#0" expanded="true" />
+            <element signature="e#58479#58480#0" expanded="true" />
+            <element signature="e#58516#58517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaSource/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="427" column="61" selection-start-line="427" selection-start-column="61" selection-end-line="427" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12563#12564#0" expanded="true" />
+            <element signature="e#12594#12595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

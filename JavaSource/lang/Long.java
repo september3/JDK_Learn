@@ -1,131 +1,50 @@
-/*
- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
- *
- * This code is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License version 2 only, as
- * published by the Free Software Foundation.  Oracle designates this
- * particular file as subject to the "Classpath" exception as provided
- * by Oracle in the LICENSE file that accompanied this code.
- *
- * This code is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * version 2 for more details (a copy is included in the LICENSE file that
- * accompanied this code).
- *
- * You should have received a copy of the GNU General Public License version
- * 2 along with this work; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- *
- * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
- * or visit www.oracle.com if you need additional information or have any
- * questions.
- */
-
 package java.lang;
 
 import java.lang.annotation.Native;
 import java.math.*;
 
-
-/**
- * The {@code Long} class wraps a value of the primitive type {@code
- * long} in an object. An object of type {@code Long} contains a
- * single field whose type is {@code long}.
- *
- * <p> In addition, this class provides several methods for converting
- * a {@code long} to a {@code String} and a {@code String} to a {@code
- * long}, as well as other constants and methods useful when dealing
- * with a {@code long}.
- *
- * <p>Implementation note: The implementations of the "bit twiddling"
- * methods (such as {@link #highestOneBit(long) highestOneBit} and
- * {@link #numberOfTrailingZeros(long) numberOfTrailingZeros}) are
- * based on material from Henry S. Warren, Jr.'s <i>Hacker's
- * Delight</i>, (Addison Wesley, 2002).
- *
- * @author  Lee Boynton
- * @author  Arthur van Hoff
- * @author  Josh Bloch
- * @author  Joseph D. Darcy
- * @since   JDK1.0
- */
 public final class Long extends Number implements Comparable<Long> {
+
     /**
-     * A constant holding the minimum value a {@code long} can
-     * have, -2<sup>63</sup>.
+     * long数据类型的最小值-2^63   static final修饰即常量
+     * @Native 这里指的是由C语言实现的函数，直接在Java程序里面进行调用
+     * JNI-Java Native Interface
      */
     @Native public static final long MIN_VALUE = 0x8000000000000000L;
 
     /**
-     * A constant holding the maximum value a {@code long} can
-     * have, 2<sup>63</sup>-1.
+     * long数据类型的最大值2^63-1
      */
     @Native public static final long MAX_VALUE = 0x7fffffffffffffffL;
 
+
     /**
-     * The {@code Class} instance representing the primitive type
-     * {@code long}.
-     *
-     * @since   JDK1.1
+     * 基本数据类型实例 long
+     *@SuppressWarnings 用于抑制编译器产生警告信息
      */
     @SuppressWarnings("unchecked")
     public static final Class<Long>     TYPE = (Class<Long>) Class.getPrimitiveClass("long");
 
+
     /**
-     * Returns a string representation of the first argument in the
-     * radix specified by the second argument.
      *
-     * <p>If the radix is smaller than {@code Character.MIN_RADIX}
-     * or larger than {@code Character.MAX_RADIX}, then the radix
-     * {@code 10} is used instead.
-     *
-     * <p>If the first argument is negative, the first element of the
-     * result is the ASCII minus sign {@code '-'}
-     * ({@code '\u005Cu002d'}). If the first argument is not
-     * negative, no sign character appears in the result.
-     *
-     * <p>The remaining characters of the result represent the magnitude
-     * of the first argument. If the magnitude is zero, it is
-     * represented by a single zero character {@code '0'}
-     * ({@code '\u005Cu0030'}); otherwise, the first character of
-     * the representation of the magnitude will not be the zero
-     * character.  The following ASCII characters are used as digits:
-     *
-     * <blockquote>
-     *   {@code 0123456789abcdefghijklmnopqrstuvwxyz}
-     * </blockquote>
-     *
-     * These are {@code '\u005Cu0030'} through
-     * {@code '\u005Cu0039'} and {@code '\u005Cu0061'} through
-     * {@code '\u005Cu007a'}. If {@code radix} is
-     * <var>N</var>, then the first <var>N</var> of these characters
-     * are used as radix-<var>N</var> digits in the order shown. Thus,
-     * the digits for hexadecimal (radix 16) are
-     * {@code 0123456789abcdef}. If uppercase letters are
-     * desired, the {@link java.lang.String#toUpperCase()} method may
-     * be called on the result:
-     *
-     * <blockquote>
-     *  {@code Long.toString(n, 16).toUpperCase()}
-     * </blockquote>
-     *
-     * @param   i       a {@code long} to be converted to a string.
-     * @param   radix   the radix to use in the string representation.
-     * @return  a string representation of the argument in the specified radix.
-     * @see     java.lang.Character#MAX_RADIX
-     * @see     java.lang.Character#MIN_RADIX
+     * 返回第二个参数指定基数中的第一个参数返回字符串形式
+     * @param i 要转换为字符串的long类型数据
+     * @param radix 要在字符串表示中使用的基数
+     * @return 指定基数中参数的字符串表示形式。
      */
     public static String toString(long i, int radix) {
+        //十进制-
         if (radix < Character.MIN_RADIX || radix > Character.MAX_RADIX)
             radix = 10;
         if (radix == 10)
             return toString(i);
+        //创建固定大小为65的字符数组
         char[] buf = new char[65];
         int charPos = 64;
         boolean negative = (i < 0);
 
+        //非十进制
         if (!negative) {
             i = -i;
         }
@@ -143,31 +62,12 @@ public final class Long extends Number implements Comparable<Long> {
         return new String(buf, charPos, (65 - charPos));
     }
 
+
     /**
-     * Returns a string representation of the first argument as an
-     * unsigned integer value in the radix specified by the second
-     * argument.
-     *
-     * <p>If the radix is smaller than {@code Character.MIN_RADIX}
-     * or larger than {@code Character.MAX_RADIX}, then the radix
-     * {@code 10} is used instead.
-     *
-     * <p>Note that since the first argument is treated as an unsigned
-     * value, no leading sign character is printed.
-     *
-     * <p>If the magnitude is zero, it is represented by a single zero
-     * character {@code '0'} ({@code '\u005Cu0030'}); otherwise,
-     * the first character of the representation of the magnitude will
-     * not be the zero character.
-     *
-     * <p>The behavior of radixes and the characters used as digits
-     * are the same as {@link #toString(long, int) toString}.
-     *
-     * @param   i       an integer to be converted to an unsigned string.
-     * @param   radix   the radix to use in the string representation.
-     * @return  an unsigned string representation of the argument in the specified radix.
-     * @see     #toString(long, int)
-     * @since 1.8
+     * 返回第一个参数的字符串表示形式，作为第二个参数指定的基数中的无符号整数值。
+     * @param i
+     * @param radix
+     * @return
      */
     public static String toUnsignedString(long i, int radix) {
         if (i >= 0)
@@ -380,15 +280,11 @@ public final class Long extends Number implements Comparable<Long> {
         return charPos;
     }
 
+
     /**
-     * Returns a {@code String} object representing the specified
-     * {@code long}.  The argument is converted to signed decimal
-     * representation and returned as a string, exactly as if the
-     * argument and the radix 10 were given as arguments to the {@link
-     * #toString(long, int)} method.
-     *
-     * @param   i   a {@code long} to be converted.
-     * @return  a string representation of the argument in base&nbsp;10.
+     * 整形数字转换成为对应的十进制字符串
+     * @param i 指定long类型的数字
+     * @return
      */
     public static String toString(long i) {
         if (i == Long.MIN_VALUE)
@@ -484,81 +380,24 @@ public final class Long extends Number implements Comparable<Long> {
         return 19;
     }
 
+
     /**
-     * Parses the string argument as a signed {@code long} in the
-     * radix specified by the second argument. The characters in the
-     * string must all be digits of the specified radix (as determined
-     * by whether {@link java.lang.Character#digit(char, int)} returns
-     * a nonnegative value), except that the first character may be an
-     * ASCII minus sign {@code '-'} ({@code '\u005Cu002D'}) to
-     * indicate a negative value or an ASCII plus sign {@code '+'}
-     * ({@code '\u005Cu002B'}) to indicate a positive value. The
-     * resulting {@code long} value is returned.
-     *
-     * <p>Note that neither the character {@code L}
-     * ({@code '\u005Cu004C'}) nor {@code l}
-     * ({@code '\u005Cu006C'}) is permitted to appear at the end
-     * of the string as a type indicator, as would be permitted in
-     * Java programming language source code - except that either
-     * {@code L} or {@code l} may appear as a digit for a
-     * radix greater than or equal to 22.
-     *
-     * <p>An exception of type {@code NumberFormatException} is
-     * thrown if any of the following situations occurs:
-     * <ul>
-     *
-     * <li>The first argument is {@code null} or is a string of
-     * length zero.
-     *
-     * <li>The {@code radix} is either smaller than {@link
-     * java.lang.Character#MIN_RADIX} or larger than {@link
-     * java.lang.Character#MAX_RADIX}.
-     *
-     * <li>Any character of the string is not a digit of the specified
-     * radix, except that the first character may be a minus sign
-     * {@code '-'} ({@code '\u005Cu002d'}) or plus sign {@code
-     * '+'} ({@code '\u005Cu002B'}) provided that the string is
-     * longer than length 1.
-     *
-     * <li>The value represented by the string is not a value of type
-     *      {@code long}.
-     * </ul>
-     *
-     * <p>Examples:
-     * <blockquote><pre>
-     * parseLong("0", 10) returns 0L
-     * parseLong("473", 10) returns 473L
-     * parseLong("+42", 10) returns 42L
-     * parseLong("-0", 10) returns 0L
-     * parseLong("-FF", 16) returns -255L
-     * parseLong("1100110", 2) returns 102L
-     * parseLong("99", 8) throws a NumberFormatException
-     * parseLong("Hazelnut", 10) throws a NumberFormatException
-     * parseLong("Hazelnut", 36) returns 1356099454469L
-     * </pre></blockquote>
-     *
-     * @param      s       the {@code String} containing the
-     *                     {@code long} representation to be parsed.
-     * @param      radix   the radix to be used while parsing {@code s}.
-     * @return     the {@code long} represented by the string argument in
-     *             the specified radix.
-     * @throws     NumberFormatException  if the string does not contain a
-     *             parsable {@code long}.
+     * 将字符串参数解析为由第二个参数指定的基数中的带符号的long
+     * @param s 包含要解析的 String表示的 long
+     * @param radix 解析时使用的基数
+     * @return
+     * @throws NumberFormatException
      */
-    public static long parseLong(String s, int radix)
-              throws NumberFormatException
-    {
+    public static long parseLong(String s, int radix)  throws NumberFormatException {
         if (s == null) {
             throw new NumberFormatException("null");
         }
 
         if (radix < Character.MIN_RADIX) {
-            throw new NumberFormatException("radix " + radix +
-                                            " less than Character.MIN_RADIX");
+            throw new NumberFormatException("radix " + radix + " less than Character.MIN_RADIX");
         }
         if (radix > Character.MAX_RADIX) {
-            throw new NumberFormatException("radix " + radix +
-                                            " greater than Character.MAX_RADIX");
+            throw new NumberFormatException("radix " + radix + " greater than Character.MAX_RADIX");
         }
 
         long result = 0;
@@ -840,48 +679,13 @@ public final class Long extends Number implements Comparable<Long> {
         return new Long(l);
     }
 
+
     /**
-     * Decodes a {@code String} into a {@code Long}.
-     * Accepts decimal, hexadecimal, and octal numbers given by the
-     * following grammar:
-     *
-     * <blockquote>
-     * <dl>
-     * <dt><i>DecodableString:</i>
-     * <dd><i>Sign<sub>opt</sub> DecimalNumeral</i>
-     * <dd><i>Sign<sub>opt</sub></i> {@code 0x} <i>HexDigits</i>
-     * <dd><i>Sign<sub>opt</sub></i> {@code 0X} <i>HexDigits</i>
-     * <dd><i>Sign<sub>opt</sub></i> {@code #} <i>HexDigits</i>
-     * <dd><i>Sign<sub>opt</sub></i> {@code 0} <i>OctalDigits</i>
-     *
-     * <dt><i>Sign:</i>
-     * <dd>{@code -}
-     * <dd>{@code +}
-     * </dl>
-     * </blockquote>
-     *
-     * <i>DecimalNumeral</i>, <i>HexDigits</i>, and <i>OctalDigits</i>
-     * are as defined in section 3.10.1 of
-     * <cite>The Java&trade; Language Specification</cite>,
-     * except that underscores are not accepted between digits.
-     *
-     * <p>The sequence of characters following an optional
-     * sign and/or radix specifier ("{@code 0x}", "{@code 0X}",
-     * "{@code #}", or leading zero) is parsed as by the {@code
-     * Long.parseLong} method with the indicated radix (10, 16, or 8).
-     * This sequence of characters must represent a positive value or
-     * a {@link NumberFormatException} will be thrown.  The result is
-     * negated if first character of the specified {@code String} is
-     * the minus sign.  No whitespace characters are permitted in the
-     * {@code String}.
-     *
-     * @param     nm the {@code String} to decode.
-     * @return    a {@code Long} object holding the {@code long}
-     *            value represented by {@code nm}
-     * @throws    NumberFormatException  if the {@code String} does not
-     *            contain a parsable {@code long}.
-     * @see java.lang.Long#parseLong(String, int)
-     * @since 1.2
+     * String解码为Long
+     *支持十进制、十六进制、八进制数
+     * @param nm
+     * @return
+     * @throws NumberFormatException
      */
     public static Long decode(String nm) throws NumberFormatException {
         int radix = 10;
@@ -930,19 +734,16 @@ public final class Long extends Number implements Comparable<Long> {
         return result;
     }
 
+
     /**
-     * The value of the {@code Long}.
-     *
-     * @serial
+     * long的值
      */
     private final long value;
 
+
     /**
-     * Constructs a newly allocated {@code Long} object that
-     * represents the specified {@code long} argument.
-     *
-     * @param   value   the value to be represented by the
-     *          {@code Long} object.
+     * 创建构造函数
+     * @param value
      */
     public Long(long value) {
         this.value = value;
@@ -960,6 +761,11 @@ public final class Long extends Number implements Comparable<Long> {
      * @throws     NumberFormatException  if the {@code String} does not
      *             contain a parsable {@code long}.
      * @see        java.lang.Long#parseLong(java.lang.String, int)
+     */
+    /**
+     * 构造函数
+     * @param s
+     * @throws NumberFormatException
      */
     public Long(String s) throws NumberFormatException {
         this.value = parseLong(s, 10);
@@ -1158,53 +964,18 @@ public final class Long extends Number implements Comparable<Long> {
         return (result == null) ? Long.valueOf(val) : result;
     }
 
+
     /**
-     * Returns the {@code long} value of the system property with
-     * the specified name.  The first argument is treated as the name
-     * of a system property.  System properties are accessible through
-     * the {@link java.lang.System#getProperty(java.lang.String)}
-     * method. The string value of this property is then interpreted
-     * as a {@code long} value, as per the
-     * {@link Long#decode decode} method, and a {@code Long} object
-     * representing this value is returned; in summary:
-     *
-     * <ul>
-     * <li>If the property value begins with the two ASCII characters
-     * {@code 0x} or the ASCII character {@code #}, not followed by
-     * a minus sign, then the rest of it is parsed as a hexadecimal integer
-     * exactly as for the method {@link #valueOf(java.lang.String, int)}
-     * with radix 16.
-     * <li>If the property value begins with the ASCII character
-     * {@code 0} followed by another character, it is parsed as
-     * an octal integer exactly as by the method {@link
-     * #valueOf(java.lang.String, int)} with radix 8.
-     * <li>Otherwise the property value is parsed as a decimal
-     * integer exactly as by the method
-     * {@link #valueOf(java.lang.String, int)} with radix 10.
-     * </ul>
-     *
-     * <p>Note that, in every case, neither {@code L}
-     * ({@code '\u005Cu004C'}) nor {@code l}
-     * ({@code '\u005Cu006C'}) is permitted to appear at the end
-     * of the property value as a type indicator, as would be
-     * permitted in Java programming language source code.
-     *
-     * <p>The second argument is the default value. The default value is
-     * returned if there is no property of the specified name, if the
-     * property does not have the correct numeric format, or if the
-     * specified name is empty or {@code null}.
-     *
-     * @param   nm   property name.
-     * @param   val   default value.
-     * @return  the {@code Long} value of the property.
-     * @throws  SecurityException for the same reasons as
-     *          {@link System#getProperty(String) System.getProperty}
-     * @see     System#getProperty(java.lang.String)
-     * @see     System#getProperty(java.lang.String, java.lang.String)
+     * 获取指定属性的对应的Long值
+     * @param nm  系统属性的名称
+     * @param val 默认值。如果没有指定名称的属性，如果该属性没有正确的数字格式，或者指定的名称为空或为空，
+     *            则返回表示第二个参数值的Long对象。
+     * @return
      */
     public static Long getLong(String nm, Long val) {
         String v = null;
         try {
+            //调用System中的getProperty()方法来获取
             v = System.getProperty(nm);
         } catch (IllegalArgumentException | NullPointerException e) {
         }
@@ -1217,52 +988,33 @@ public final class Long extends Number implements Comparable<Long> {
         return val;
     }
 
+
     /**
-     * Compares two {@code Long} objects numerically.
-     *
-     * @param   anotherLong   the {@code Long} to be compared.
-     * @return  the value {@code 0} if this {@code Long} is
-     *          equal to the argument {@code Long}; a value less than
-     *          {@code 0} if this {@code Long} is numerically less
-     *          than the argument {@code Long}; and a value greater
-     *          than {@code 0} if this {@code Long} is numerically
-     *           greater than the argument {@code Long} (signed
-     *           comparison).
-     * @since   1.2
+     * 用数值的形式比较两个long对象
+     * @param anotherLong
+     * @return
      */
     public int compareTo(Long anotherLong) {
         return compare(this.value, anotherLong.value);
     }
 
+
     /**
-     * Compares two {@code long} values numerically.
-     * The value returned is identical to what would be returned by:
-     * <pre>
-     *    Long.valueOf(x).compareTo(Long.valueOf(y))
-     * </pre>
-     *
-     * @param  x the first {@code long} to compare
-     * @param  y the second {@code long} to compare
-     * @return the value {@code 0} if {@code x == y};
-     *         a value less than {@code 0} if {@code x < y}; and
-     *         a value greater than {@code 0} if {@code x > y}
-     * @since 1.7
+     *比较两个数值按无符号数值进行比较---static修饰的方法为类方法
+     * @param x
+     * @param y
+     * @return
      */
     public static int compare(long x, long y) {
         return (x < y) ? -1 : ((x == y) ? 0 : 1);
     }
 
+
     /**
-     * Compares two {@code long} values numerically treating the values
-     * as unsigned.
-     *
-     * @param  x the first {@code long} to compare
-     * @param  y the second {@code long} to compare
-     * @return the value {@code 0} if {@code x == y}; a value less
-     *         than {@code 0} if {@code x < y} as unsigned values; and
-     *         a value greater than {@code 0} if {@code x > y} as
-     *         unsigned values
-     * @since 1.8
+     * 比较两个long值，视为无符号值进行比较
+     * @param x
+     * @param y
+     * @return
      */
     public static int compareUnsigned(long x, long y) {
         return compare(x + MIN_VALUE, y + MIN_VALUE);
@@ -1574,47 +1326,38 @@ public final class Long extends Number implements Comparable<Long> {
             ((i >>> 16) & 0xffff0000L) | (i >>> 48);
     }
 
+
     /**
-     * Adds two {@code long} values together as per the + operator.
-     *
-     * @param a the first operand
-     * @param b the second operand
-     * @return the sum of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
-     * @since 1.8
+     * 对两个long类型操作数进行求和
+     * @param a
+     * @param b
+     * @return
      */
     public static long sum(long a, long b) {
         return a + b;
     }
 
     /**
-     * Returns the greater of two {@code long} values
-     * as if by calling {@link Math#max(long, long) Math.max}.
-     *
-     * @param a the first operand
-     * @param b the second operand
-     * @return the greater of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
-     * @since 1.8
+     * 通过调用（call）Math.max()方法来确定两个long类型操作数之间的最大值
+     * @param a  第一个操作数
+     * @param b  第二个操作数
+     * @return
      */
     public static long max(long a, long b) {
         return Math.max(a, b);
     }
 
+
     /**
-     * Returns the smaller of two {@code long} values
-     * as if by calling {@link Math#min(long, long) Math.min}.
-     *
-     * @param a the first operand
-     * @param b the second operand
-     * @return the smaller of {@code a} and {@code b}
-     * @see java.util.function.BinaryOperator
-     * @since 1.8
+     * 通过调用Math.min()方法来返回两个long类型数字之中的最小值
+     * @param a  第一个操作数operand
+     * @param b  第二个操作数
+     * @return
      */
     public static long min(long a, long b) {
         return Math.min(a, b);
     }
 
-    /** use serialVersionUID from JDK 1.0.2 for interoperability */
+    /*使用jdk 1.0.2中的serialversionuid实现互操作性*/
     @Native private static final long serialVersionUID = 4290774380558885855L;
 }
